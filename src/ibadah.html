@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jadwal Ibadah | GPIB Pniel Surabaya</title>
+    <link rel="stylesheet" href="../dist/style.css">
+</head>
+<body class="overflow-x-hidden font-pops">
+    
+    <!-- START : Navigation Bar Section -->
+    <nav class="mt-7 w-screen  px-[12%] fixed z-20 navigationBar py-6 md:py-3 transition-all">
+        <div class="grid grid-cols-12 content-center justify-between align-middle ">
+            <div class="md:grid grid-cols-3 col-span-5 hidden">
+                <a href="warta.html" class="text-prim-white w-fit text-center m-auto text-sm menuNavDesk">Warta</a>
+                <a href="ibadah.html" class="text-prim-white w-fit text-center m-auto text-sm menuNavDesk">Ibadah</a>
+                <a class="text-prim-white cursor-pointer w-fit text-center m-auto text-sm menuNavDesk strukturMenu">Struktur</a>
+                
+            </div>
+            <div class="col-span-3 md:col-span-2">
+                <a href="index.html">
+                    <img src="../dist/assets/img/logo2.png" alt="Logo GPIB Pniel Surabaya" class="nav-logo m-auto w-80 md:w-24 cursor-pointer">
+                </a>
+            </div>
+            <div class="hidden md:grid grid-cols-3 col-span-5">
+                <a class="text-prim-white cursor-pointer w-fit text-center m-auto text-sm menuNavDesk pelkatMenu">Pelkat</a>
+                <a class="text-prim-white cursor-pointer w-fit text-center m-auto text-sm menuNavDesk beritaMenu">Berita</a>
+                <a href="kontak.html" class="text-prim-white w-fit text-center m-auto text-sm menuNavDesk">Kontak</a>
+            </div>
+            <div class="md:hidden col-span-9 ml-auto">
+                <button class="hamburgerButton">
+                    <div class="h-1 w-6 bg-prim-white mb-1"></div>
+                    <div class="h-1 w-6 bg-prim-white mb-1"></div>
+                    <div class="h-1 w-6 bg-prim-white"></div>
+                </button>
+            </div>
+        </div>
+
+        <!-- Sub Menu -->
+        <div class="strukturSub px-4 py-3 mt-5 ml-[23%] bg-prim-white border-2 hidden border-prim-blue rounded-xl absolute grid grid-rows-2">
+            <a href="majelis.html" class="hover:underline-prim-blue hover:underline">Majelis & PHMJ</a>
+            <a href="komisi.html" class="hover:underline-prim-blue hover:underline mt-1">Komisi & BPPJ</a>
+        </div>
+        <div class="pelkatSub px-4 py-3 mt-5 ml-[47%] bg-prim-white border-2 hidden border-prim-blue rounded-xl absolute grid grid-rows-2">
+            <a href="pelkat.html" class="hover:underline-prim-blue hover:underline">PA</a>
+            <a href="pelkat.html" class="hover:underline-prim-blue hover:underline mt-1">PT</a>
+            <a href="pelkat.html" class="hover:underline-prim-blue hover:underline mt-1">GP</a>
+            <a href="pelkat.html" class="hover:underline-prim-blue hover:underline mt-1">PKP</a>
+            <a href="pelkat.html" class="hover:underline-prim-blue hover:underline mt-1">PKB</a>
+            <a href="pelkat.html" class="hover:underline-prim-blue hover:underline mt-1">PKLU</a>
+        </div>
+        <div class="beritaSub px-4 py-3 mt-5 ml-[58%] bg-prim-white border-2 hidden border-prim-blue rounded-xl absolute grid grid-rows-2">
+            <a href="artikel.html" class="hover:underline-prim-blue hover:underline">Artikel</a>
+            <a href="galeri.html" class="hover:underline-prim-blue hover:underline mt-1">Foto</a>
+        </div>
+    </nav>
+    
+    <!-- END : Navigation Bar Section -->
+
+    <!-- START : Hamburger Menu -->
+    <section class="bg-prim-white w-screen h-screen z-10 hamburgerMenu hidden fixed py-36 ">
+        <div class="grid grid-rows-8 text-prim-blue font-bold text-xl text-center h-full menuList overflow-y-scroll">
+            <a href="warta.html" class="self-center w-fit mx-auto wartaMobile">Warta</a>
+            <a href="ibadah.html" class="self-center w-fit mx-auto ibadahMobile">Ibadah</a>
+            <button class="self-center strukturMobile w-fit mx-auto">Struktur</button>
+            <div class="menuMajelis hidden grid-rows-2 bg-prim-blue py-5 gap-7">
+                <a href="majelis.html" class="self-center text-prim-white w-fit mx-auto text-[16px]">Majelis & PHMJ</a>
+                <a href="komisi.html" class="self-center text-prim-white w-fit mx-auto text-[16px]">Komisi & BPPJ</a>
+            </div>
+            <button class="self-center w-fit mx-auto pelkatMobile">Pelkat</button>
+            <div class="menuPelkat hidden grid-rows-2 bg-prim-blue py-5 gap-7">
+                <a href="pelkat.html" class="self-center text-prim-white w-fit mx-auto text-[16px]">PA</a>
+                <a href="pelkat.html" class="self-center text-prim-white w-fit mx-auto text-[16px]">PT</a>
+                <a href="pelkat.html" class="self-center text-prim-white w-fit mx-auto text-[16px]">GP</a>
+                <a href="pelkat.html" class="self-center text-prim-white w-fit mx-auto text-[16px]">PKP</a>
+                <a href="pelkat.html" class="self-center text-prim-white w-fit mx-auto text-[16px]">PKB</a>
+                <a href="pelkat.html" class="self-center text-prim-white w-fit mx-auto text-[16px]">PKLU</a>
+            </div>
+            <button href="" class="self-center w-fit mx-auto beritaMobile">Berita</button>
+            <div class="menuBerita hidden grid-rows-2 bg-prim-blue py-5 gap-7">
+                <a href="artikel.html" class="self-center text-prim-white w-fit mx-auto text-[16px]">Artikel</a>
+                <a href="galeri.html" class="self-center text-prim-white w-fit mx-auto text-[16px]">Foto</a>
+            </div>
+            <a href="" class="self-center w-fit mx-auto kontakMobile">Kontak</a>
+        </div>
+    </section>
+    <!-- END : Hamburger Menu -->
+
+    <!-- START : Home Banner -->
+    <section class="banner-home bg-ibadah  w-screen h-96 bg-cover bg-[center_left_-41rem] md:bg-center px-[12%]">
+            <div class="mx-auto relative text-center items-center top-[55%] right-[50%] translate-x-[50%] translate-y-[-50%]">
+                <h1 class="text-prim-white leading-relaxed text-2xl md:text-[3rem] font-bold text-center ">Jadwal Ibadah GPIB Jemaat Pniel Surabaya</h1>
+            </div>
+    </section>
+    <!-- END : Home Banner -->
+
+    
+    <!-- START : Jadwal Ibadah Umum -->
+    <section class="px-[12%] mt-20 mb-11">
+        <p class="text-prim-blue">Ibadah</p>
+        <h2 class="font-bold text-4xl text-prim-blue">Jadwal Ibadah</h2>
+
+        <!-- List Ibadah -->
+        <div class="mt-9 grid grid-cols-1 lg:grid-cols-12 justify-between">
+
+            
+
+            <!-- Button Ibadah-->
+            <div class="col-span-3 ">
+                <ul class="w-full grid md:grid-cols-2 sm:grid-cols-1 lg:grid-cols-1 lg:grid-rows-4 md:grid-rows-2 sm:grid-rows-4 gap-5">
+                    <li>
+                        <input type="radio" id="ibadahPniel" name="ibadah" value="ibadahPniel" class="hidden peer" required checked>
+                        <label for="ibadahPniel" class="inline-flex items-center justify-between w-full p-5 text-prim-blue bg-prim-white border-2 border-prim-blue rounded-2xl cursor-pointer dark:hover:text-prim-white dark:border-prim-blue dark:peer-checked:text-prim-white transition-colors peer-checked:bg-prim-blue peer-checked:border-prim-blue peer-checked:text-prim-blue hover:text-prim-white hover:bg-prim-white dark:text-prim-blue dark:bg-prim-white dark:hover:bg-prim-blue"">                           
+                            <div class="block">
+                                <div class="w-full font-semibold">Ibadah Minggu Pniel</div>
+                            </div>
+                        </label>
+                    </li>
+                    <li>
+                        <input type="radio" id="ibadahTiberias" name="ibadah" value="ibadahTiberias" class="hidden peer">
+                        <label for="ibadahTiberias" class="inline-flex items-center justify-between w-full p-5 text-prim-blue bg-prim-white border-2 border-prim-blue rounded-2xl cursor-pointer dark:hover:text-prim-white dark:border-prim-blue dark:peer-checked:text-prim-white transition-colors peer-checked:bg-prim-blue peer-checked:border-prim-blue peer-checked:text-prim-blue hover:text-prim-white hover:bg-prim-white dark:text-prim-blue dark:bg-prim-white dark:hover:bg-prim-blue">
+                            <div class="block">
+                                <div class="w-full font-semibold">Ibadah Minggu Tiberias</div>
+                            </div>
+                        </label>
+                    </li>
+                    <li>
+                        <input type="radio" id="ibadahKeluarga" name="ibadah" value="ibadahKeluarga" class="hidden peer">
+                        <label for="ibadahKeluarga" class="inline-flex items-center justify-between w-full p-5 text-prim-blue bg-prim-white border-2 border-prim-blue rounded-2xl cursor-pointer dark:hover:text-prim-white dark:border-prim-blue dark:peer-checked:text-prim-white transition-colors peer-checked:bg-prim-blue peer-checked:border-prim-blue peer-checked:text-prim-blue hover:text-prim-white hover:bg-prim-white dark:text-prim-blue dark:bg-prim-white dark:hover:bg-prim-blue">
+                            <div class="block">
+                                <div class="w-full font-semibold">Ibadah Keluarga</div>
+                            </div>
+                        </label>
+                    </li>
+                    <li>
+                        <input type="radio" id="ibadahPerayaan" name="ibadah" value="ibadahPerayaan" class="hidden peer">
+                        <label for="ibadahPerayaan" class="inline-flex items-center justify-between w-full p-5 text-prim-blue bg-prim-white border-2 border-prim-blue rounded-2xl cursor-pointer dark:hover:text-prim-white dark:border-prim-blue dark:peer-checked:text-prim-white transition-colors peer-checked:bg-prim-blue peer-checked:border-prim-blue peer-checked:text-prim-blue hover:text-prim-white hover:bg-prim-white dark:text-prim-blue dark:bg-prim-white dark:hover:bg-prim-blue">
+                            <div class="block">
+                                <div class="w-full font-semibold">Ibadah Perayaan</div>
+                            </div>
+                        </label>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-span-2"></div>
+            
+            <div class="col-span-7 ibadahPnielList mt-10 lg:mt-0">
+
+                <!-- Jadwal Ibadah Minggu Tiberias Content -->
+                <div class="tiberiasContent hidden">
+                    <div class="border-b border-prim-blue pb-4">
+                        <div class="grid grid-cols-2">
+                            <div>
+                                <p class="text-prim-blue">Tanggal : <span class="tglPniel1">12 April 2023</span></p>
+                                <p class="text-prim-blue">Ayat Alkitab : <span class="ayatPniel1">Matius 1 : 1</span></p>
+                            </div>
+                            <div class="ml-auto text-right">
+                                <p class="text-lg text-prim-blue font-bold">Pos Tiberias</p>
+                                <p class="text-prim-blue">Jam 06.00 WIB</p>
+                            </div>
+                        </div>
+                        <p class="text-prim-blue text-xl mt-3">Pelayan Firman : <span class="pdtPnel1">Pdt. Maggie Liona H. S.th</span></p>
+                        <p class="text-prim-blue">Paduan Suara : <span class="PujianPniel1">VG. Elshaday</span></p>
+                    </div>
+                </div>
+
+                <!-- Jadwak Ibadah Minggu Pniel Content -->
+                <div class="grid grid-rows-3 gap-10 pnielContent">
+                    <div class="border-b border-prim-blue">
+                        <div class="grid grid-cols-2">
+                            <div>
+                                <p class="text-prim-blue">Tanggal : <span class="tglPniel1">12 April 2023</span></p>
+                                <p class="text-prim-blue">Ayat Alkitab : <span class="ayatPniel1">Matius 1 : 1</span></p>
+                            </div>
+                            <div class="ml-auto text-right">
+                                <p class="text-lg text-prim-blue font-bold">Pniel I</p>
+                                <p class="text-prim-blue">Jam 06.00 WIB</p>
+                            </div>
+                        </div>
+                        <p class="text-prim-blue text-xl mt-3">Pelayan Firman : <span class="pdtPnel1">Pdt. Maggie Liona H. S.th</span></p>
+                        <p class="text-prim-blue">Paduan Suara : <span class="PujianPniel1">VG. Elshaday</span></p>
+                    </div>
+
+                    <div class="border-b border-prim-blue pb-4">
+                        <div class="grid grid-cols-2">
+                            <div>
+                                <p class="text-prim-blue">Tanggal : <span class="tglPniel2">12 April 2023</span></p>
+                                <p class="text-prim-blue">Ayat Alkitab : <span class="ayatPniel2">Matius 1 : 1</span></p>
+                            </div>
+                            <div class="ml-auto text-right">
+                                <p class="text-lg text-prim-blue font-bold">Pniel II</p>
+                                <p class="text-prim-blue">Jam 09.00 WIB</p>
+                            </div>
+                        </div>
+                        <p class="text-prim-blue text-xl mt-3">Pelayan Firman : <span class="pdtPnel2">Pdt. Maggie Liona H. S.th</span></p>
+                        <p class="text-prim-blue">Paduan Suara : <span class="PujianPniel2">VG. Elshaday</span></p>
+                    </div>
+
+                    <div class="border-b border-prim-blue pb-4">
+                        <div class="grid grid-cols-2">
+                            <div>
+                                <p class="text-prim-blue">Tanggal : <span class="tglPniel3">12 April 2023</span></p>
+                                <p class="text-prim-blue">Ayat Alkitab : <span class="ayatPniel3">Matius 1 : 1</span></p>
+                            </div>
+                            <div class="ml-auto text-right">
+                                <p class="text-lg text-prim-blue font-bold">Pniel III</p>
+                                <p class="text-prim-blue">Jam 18.00 WIB</p>
+                            </div>
+                        </div>
+                        <p class="text-prim-blue text-xl mt-3">Pelayan Firman : <span class="pdtPniel3">Pdt. Maggie Liona H. S.th</span></p>
+                        <p class="text-prim-blue">Paduan Suara : <span class="PujianPniel3">VG. Elshaday</span></p>
+                    </div>
+                </div>
+
+                <!-- Jadwak Keluarga Content -->
+                <div class="grid-rows-3 gap-10 keluargaContent hidden">
+                    <div class="border-b border-prim-blue pb-4">
+                        <div class="grid grid-cols-2">
+                            <div>
+                                <p class="text-prim-blue">Tanggal : <span class="tglPniel1">12 April 2023</span></p>
+                                <p class="text-prim-blue">Ayat Alkitab : <span class="ayatPniel1">Matius 1 : 1</span></p>
+                            </div>
+                            <div class="ml-auto text-right">
+                                <p class="text-lg text-prim-blue font-bold">Sektor 1</p>
+                                <p class="text-prim-blue">Jam 06.00 WIB</p>
+                            </div>
+                        </div>
+                        <p class="text-prim-blue text-xl mt-3">Pelayan Firman : <span class="pdtPnel1">Pdt. Maggie Liona H. S.th</span></p>
+                        <p class="text-prim-blue">Paduan Suara : <span class="PujianPniel1">VG. Elshaday</span></p>
+                    </div>
+
+                    <div class="border-b border-prim-blue pb-4 mt-6">
+                        <div class="grid grid-cols-2">
+                            <div>
+                                <p class="text-prim-blue">Tanggal : <span class="tglPniel2">12 April 2023</span></p>
+                                <p class="text-prim-blue">Ayat Alkitab : <span class="ayatPniel2">Matius 1 : 1</span></p>
+                            </div>
+                            <div class="ml-auto text-right">
+                                <p class="text-lg text-prim-blue font-bold">Sektor 2</p>
+                                <p class="text-prim-blue">Jam 09.00 WIB</p>
+                            </div>
+                        </div>
+                        <p class="text-prim-blue text-xl mt-3">Pelayan Firman : <span class="pdtPnel2">Pdt. Maggie Liona H. S.th</span></p>
+                        <p class="text-prim-blue">Paduan Suara : <span class="PujianPniel2">VG. Elshaday</span></p>
+                    </div>
+
+                    <div class="border-b border-prim-blue pb-4 mt-6">
+                        <div class="grid grid-cols-2">
+                            <div>
+                                <p class="text-prim-blue">Tanggal : <span class="tglPniel3">12 April 2023</span></p>
+                                <p class="text-prim-blue">Ayat Alkitab : <span class="ayatPniel3">Matius 1 : 1</span></p>
+                            </div>
+                            <div class="ml-auto text-right">
+                                <p class="text-lg text-prim-blue font-bold">Sektor 3</p>
+                                <p class="text-prim-blue">Jam 18.00 WIB</p>
+                            </div>
+                        </div>
+                        <p class="text-prim-blue text-xl mt-3">Pelayan Firman : <span class="pdtPniel3">Pdt. Maggie Liona H. S.th</span></p>
+                        <p class="text-prim-blue">Paduan Suara : <span class="PujianPniel3">VG. Elshaday</span></p>
+                    </div>
+                    
+                    <div class="border-b border-prim-blue pb-4 mt-6">
+                        <div class="grid grid-cols-2">
+                            <div>
+                                <p class="text-prim-blue">Tanggal : <span class="tglPniel3">12 April 2023</span></p>
+                                <p class="text-prim-blue">Ayat Alkitab : <span class="ayatPniel3">Matius 1 : 1</span></p>
+                            </div>
+                            <div class="ml-auto text-right">
+                                <p class="text-lg text-prim-blue font-bold">Sektor 4</p>
+                                <p class="text-prim-blue">Jam 18.00 WIB</p>
+                            </div>
+                        </div>
+                        <p class="text-prim-blue text-xl mt-3">Pelayan Firman : <span class="pdtPniel3">Pdt. Maggie Liona H. S.th</span></p>
+                        <p class="text-prim-blue">Paduan Suara : <span class="PujianPniel3">VG. Elshaday</span></p>
+                    </div>
+
+                    <div class="border-b border-prim-blue pb-4 mt-6">
+                        <div class="grid grid-cols-2">
+                            <div>
+                                <p class="text-prim-blue">Tanggal : <span class="tglPniel3">12 April 2023</span></p>
+                                <p class="text-prim-blue">Ayat Alkitab : <span class="ayatPniel3">Matius 1 : 1</span></p>
+                            </div>
+                            <div class="ml-auto text-right">
+                                <p class="text-lg text-prim-blue font-bold">Sektor 5</p>
+                                <p class="text-prim-blue">Jam 18.00 WIB</p>
+                            </div>
+                        </div>
+                        <p class="text-prim-blue text-xl mt-3">Pelayan Firman : <span class="pdtPniel3">Pdt. Maggie Liona H. S.th</span></p>
+                        <p class="text-prim-blue">Paduan Suara : <span class="PujianPniel3">VG. Elshaday</span></p>
+                    </div>
+
+                    <div class="border-b border-prim-blue pb-4 mt-6">
+                        <div class="grid grid-cols-2">
+                            <div>
+                                <p class="text-prim-blue">Tanggal : <span class="tglPniel3">12 April 2023</span></p>
+                                <p class="text-prim-blue">Ayat Alkitab : <span class="ayatPniel3">Matius 1 : 1</span></p>
+                            </div>
+                            <div class="ml-auto text-right">
+                                <p class="text-lg text-prim-blue font-bold">Sektor 6</p>
+                                <p class="text-prim-blue">Jam 18.00 WIB</p>
+                            </div>
+                        </div>
+                        <p class="text-prim-blue text-xl mt-3">Pelayan Firman : <span class="pdtPniel3">Pdt. Maggie Liona H. S.th</span></p>
+                        <p class="text-prim-blue">Paduan Suara : <span class="PujianPniel3">VG. Elshaday</span></p>
+                    </div>
+                </div>
+
+                <!-- Jadwal Ibadah Perayaan Content -->
+                <div class="perayaanContent hidden">
+                    <div class="border-b border-prim-blue pb-4">
+                        <div class="grid grid-cols-2">
+                            <div>
+                                <p class="text-prim-blue">Tanggal : <span class="tglPniel1">12 April 2023</span></p>
+                                <p class="text-prim-blue">Ayat Alkitab : <span class="ayatPniel1">Matius 1 : 1</span></p>
+                            </div>
+                            <div class="ml-auto text-right">
+                                <p class="text-lg text-prim-blue font-bold">Perayaan Paskah</p>
+                                <p class="text-prim-blue">Jam 06.00 WIB</p>
+                            </div>
+                        </div>
+                        <p class="text-prim-blue text-xl mt-3">Pelayan Firman : <span class="pdtPnel1">Pdt. Maggie Liona H. S.th</span></p>
+                        <p class="text-prim-blue">Paduan Suara : <span class="PujianPniel1">VG. Elshaday</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END : Jadwal Ibadah Umum -->
+
+    <!-- START : Jadwal Ibadah Pelkat -->
+    <section class="jadwalPelkat my-4 px-[12%] mb-10 grid grid-cols-2 md:grid-cols-8 lg:grid-cols-12 gap-10">
+        
+        <!-- START : Card PA -->
+        <div class="w-full py-7 bg-prim-white border-2 rounded-2xl border-t-prim-blue col-span-4 px-4">
+            <div class="grid grid-cols-2 ">
+                <div>
+                    <p class="text-prim-blue text-sm">Ibadah Hari Minggu</p>
+                    <p class="text-prim-blue text-sm">Pelayanan Anak</p>
+                </div>
+                <div>
+                    <img src="../dist/assets/img/1.png" alt="Pelkat PA GPIB Pniel Surabaya" class="w-11 ml-auto ">
+                </div>
+            </div>
+            <hr class="mt-4 mb-4">
+            <div>
+                <p class="text-sm">Tanggal : <span>Minggu, 12 April 2023</span></p>
+                <p class="text-sm mt-1">Jam : <span>09.00</span> WIB</p>
+                <p class="text-sm mt-1">Tempat : <span>Ruang Serbaguna GPIB Pniel</span></p>
+            </div>
+            <div class="mt-8">
+                <table>
+                    <tr>
+                        <th class="text-sm text-left">Kelas Kecil</th>
+                        <td class="text-sm">: <span last="kelasKecilPA ">Marcya Thenu</span></td>
+                    </tr>
+                    <tr>
+                        <th class="text-sm text-left">Kelas Tanggung</th>
+                        <td class="text-sm">: <span class="kelasTanggungPA ">Citra Febriyana</span></td>
+                    </tr>              
+                    <tr>
+                        <th class="text-sm text-left">Kelas Besar</th>
+                        <td class="text-sm">: <span class="kelasBesarPA "> Vania Lay</span></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <!-- END : Card PA -->
+
+        <!-- START : Card PT -->
+        <div class="w-full py-7 bg-prim-white border-2 rounded-2xl border-t-prim-blue col-span-4 px-4">
+            <div class="grid grid-cols-2 ">
+                <div>
+                    <p class="text-prim-blue text-sm">Ibadah Hari Minggu</p>
+                    <p class="text-prim-blue text-sm">Persekutuan Teruna</p>
+                </div>
+                <div>
+                    <img src="../dist/assets/img/2.png" alt="Pelkat PT GPIB Pniel Surabaya" class="w-11 ml-auto ">
+                </div>
+            </div>
+            <hr class="mt-4 mb-4">
+            <div>
+                <p class="text-sm">Tanggal : <span>Minggu, 12 April 2023</span></p>
+                <p class="text-sm mt-1">Jam : <span>09.00</span> WIB</p>
+                <p class="text-sm mt-1">Tempat : <span>Ruang Pelkat GPIB Pniel</span></p>
+            </div>
+            <div class="mt-8">
+                <table>
+                    <tr>
+                        <th class="text-sm text-left">Kelas Eka</th>
+                        <td class="text-sm">: <span last="kelasEkaPT ">Marcya Thenu</span></td>
+                    </tr>
+                    <tr>
+                        <th class="text-sm text-left">Kelas Dwi</th>
+                        <td class="text-sm">: <span class="kelasDwiPT ">Citra Febriyana</span></td>
+                    </tr>              
+                    <tr>
+                        <th class="text-sm text-left">Liturgos</th>
+                        <td class="text-sm">: <span class="liturgosPT "> Vania Lay</span></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <!-- END : Card PT -->
+
+        <!-- START : Card GP -->
+        <div class="w-full py-7 bg-prim-white border-2 rounded-2xl border-t-prim-blue col-span-4 px-4">
+            <div class="grid grid-cols-2 ">
+                <div>
+                    <p class="text-prim-blue text-sm">Ibadah Pelkat</p>
+                    <p class="text-prim-blue text-sm">Gerakan Pemuda</p>
+                </div>
+                <div>
+                    <img src="../dist/assets/img/3.png" alt="Pelkat GP GPIB Pniel Surabaya" class="w-11 ml-auto ">
+                </div>
+            </div>
+            <hr class="mt-4 mb-4">
+            <div>
+                <p class="text-sm">Tanggal : <span>Selasa, 12 April 2023</span></p>
+                <p class="text-sm mt-1">Jam : <span>19.30</span> WIB</p>
+                <p class="text-sm mt-1">Tempat : <span>Ruang Serbaguna GPIB Pniel</span></p>
+            </div>
+            <div class="mt-8">
+                <table>
+                    <tr> 
+                        <th class="text-sm text-left">Pemberita Firman</th>
+                        <td class="text-sm">: <span last="khotbahGP ">Marcya Thenu</span></td>
+                    </tr>
+                    <tr>
+                        <th class="text-sm text-left">Liturgos</th>
+                        <td class="text-sm">: <span class="liturgosGP">Citra Febriyana</span></td>
+                    </tr>              
+                    <tr>
+                        <th class="text-sm text-left">Persembahan</th>
+                        <td class="text-sm">: <span class="persembahanGP"> Vania Lay</span></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <!-- END : Card GP -->
+
+        <!-- START : Card PKP -->
+        <div class="w-full py-7 bg-prim-white border-2 rounded-2xl border-t-prim-blue col-span-4 px-4">
+            <div class="grid grid-cols-2 ">
+                <div class="w-52">
+                    <p class="text-prim-blue text-sm">Ibadah Pelkat</p>
+                    <p class="text-prim-blue text-sm">Persekutuan Kaum Perempuan</p>
+                </div>
+                <div class="w-fit ml-auto">
+                    <img src="../dist/assets/img/4.png" alt="Pelkat PKP GPIB Pniel Surabaya" class="w-11 ml-auto ">
+                </div>
+            </div>
+            <hr class="mt-4 mb-4">
+            <div>
+                <p class="text-sm">Tanggal : <span>Selasa, 12 April 2023</span></p>
+                <p class="text-sm mt-1">Jam : <span>19.30</span> WIB</p>
+                <p class="text-sm mt-1">Tempat : <span>Ruang Serbaguna GPIB Pniel</span></p>
+            </div>
+            <div class="mt-8">
+                <table>
+                    <tr> 
+                        <th class="text-sm text-left">Pemberita Firman</th>
+                        <td class="text-sm">: <span last="khotbahPKP ">Marcya Thenu</span></td>
+                    </tr>
+                    <tr>
+                        <th class="text-sm text-left">Liturgos</th>
+                        <td class="text-sm">: <span class="liturgosPKP">Citra Febriyana</span></td>
+                    </tr>              
+                </table>
+            </div>
+        </div>
+        <!-- END : Card PKP -->
+
+        <!-- START : Card PKB -->
+        <div class="w-full py-7 bg-prim-white border-2 rounded-2xl border-t-prim-blue col-span-4 px-4">
+            <div class="grid grid-cols-2 ">
+                <div class="w-52">
+                    <p class="text-prim-blue text-sm">Ibadah Pelkat</p>
+                    <p class="text-prim-blue text-sm">Persekutuan Kaum Bapak</p>
+                </div>
+                <div class="w-fit ml-auto">
+                    <img src="../dist/assets/img/5.png" alt="Pelkat PKB GPIB Pniel Surabaya" class="w-11 ml-auto ">
+                </div>
+            </div>
+            <hr class="mt-4 mb-4">
+            <div>
+                <p class="text-sm">Tanggal : <span>Selasa, 12 April 2023</span></p>
+                <p class="text-sm mt-1">Jam : <span>19.30</span> WIB</p>
+                <p class="text-sm mt-1">Tempat : <span>Ruang Serbaguna GPIB Pniel</span></p>
+            </div>
+            <div class="mt-8">
+                <table>
+                    <tr> 
+                        <th class="text-sm text-left">Pemberita Firman</th>
+                        <td class="text-sm">: <span last="khotbahPKB ">Marcya Thenu</span></td>
+                    </tr>
+                    <tr>
+                        <th class="text-sm text-left">Liturgos</th>
+                        <td class="text-sm">: <span class="liturgosPKB">Citra Febriyana</span></td>
+                    </tr>              
+                </table>
+            </div>
+        </div>
+        <!-- END : Card PKB -->
+
+        <!-- START : Card PKLU -->
+        <div class="w-full py-7 bg-prim-white border-2 rounded-2xl border-t-prim-blue col-span-4 px-4">
+            <div class="grid grid-cols-2 ">
+                <div class="w-52">
+                    <p class="text-prim-blue text-sm">Ibadah Pelkat</p>
+                    <p class="text-prim-blue text-sm">Persekutuan Kaum Lanjut Usia</p>
+                </div>
+                <div class="w-fit ml-auto">
+                    <img src="../dist/assets/img/6.png" alt="Pelkat PKP GPIB Pniel Surabaya" class="w-11 ml-auto ">
+                </div>
+            </div>
+            <hr class="mt-4 mb-4">
+            <div>
+                <p class="text-sm">Tanggal : <span>Selasa, 12 April 2023</span></p>
+                <p class="text-sm mt-1">Jam : <span>19.30</span> WIB</p>
+                <p class="text-sm mt-1">Tempat : <span>Ruang Serbaguna GPIB Pniel</span></p>
+            </div>
+            <div class="mt-8">
+                <table>
+                    <tr> 
+                        <th class="text-sm text-left">Pemberita Firman</th>
+                        <td class="text-sm">: <span last="khotbahPKLU ">Marcya Thenu</span></td>
+                    </tr>
+                    <tr>
+                        <th class="text-sm text-left">Liturgos</th>
+                        <td class="text-sm">: <span class="liturgosPKLU">Citra Febriyana</span></td>
+                    </tr>              
+                </table>
+            </div>
+        </div>
+        <!-- END : Card PKLU -->
+
+    </section>
+    <!-- END : Jadwal Ibadah Pelkat -->
+
+
+
+    <!-- START : Footer -->
+    <footer class="bg-prim-blue px-[12%] py-12">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-between gap-9">
+            <div class="">
+                <img src="../dist/assets/img/logo2.png" alt="GPIB Pniel Surabaya" class="w-40 mb-10">
+                <p class="font-bold text-prim-white">+62 000 000 000</p>
+                <p class="font-bold text-prim-white mt-2">gpib.pniel.sby@gmail.com</p>
+            </div>
+            <div class="lg:mx-auto">
+                <p class="font-bold text-prim-white mb-6">Menu</p>
+                <a href="" class="text-sm text-prim-white block">Warta</a>
+                <a href="" class="text-sm text-prim-white block mt-2">Ibadah</a>
+                <a href="" class="text-sm text-prim-white block mt-2">Majelis</a>
+                <a href="" class="text-sm text-prim-white block mt-2">Berita</a>
+                <a href="" class="text-sm text-prim-white block mt-2">Kontak</a>
+            </div>
+            <div class="lg:mx-auto">
+                <p class="font-bold text-prim-white mb-6">Pelkat</p>
+                <a href="" class="text-sm text-prim-white block">Pelayanan Anak</a>
+                <a href="" class="text-sm text-prim-white block mt-2">Persekutuan Teruna</a>
+                <a href="" class="text-sm text-prim-white block mt-2">Gerakan Pemuda</a>
+                <a href="" class="text-sm text-prim-white block mt-2">Persekutuan Kaum Perempuan</a>
+                <a href="" class="text-sm text-prim-white block mt-2">Persekutuan Kaum Bapak</a>
+                <a href="" class="text-sm text-prim-white block mt-2">Persekutuan Kaum Lanjut Usia</a>
+            </div>
+            <div class="lg:mx-auto">
+                <p class="font-bold text-prim-white mb-6">Lokasi</p>
+                <p href="" class="text-sm text-prim-white">Jl. Rajawali 80 - 82 <br> Surabaya</p>
+            </div>
+        </div>
+    </footer>
+    <!-- END : Footer -->
+
+    <!-- START : Copyright -->
+    <section class="py-2 w-screen">
+        <p class="font-bold text-sm text-prim-blue text-center">Copyright ©2023 GPIB Pniel Surabaya. All Rights Reserved.</p>
+    </section>
+    <!-- END : Copyright -->
+
+    <!-- Script File Stacks -->
+    <script src="../src/script.js"></script>
+</body>
+</html>

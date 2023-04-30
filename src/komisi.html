@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../dist/style.css">
+    <title>Komisi & BPPJ | GPIB Pniel Surabaya</title>
+</head>
+<body class="overflow-x-hidden font-pops">
+
+    <!-- START : Navigation Bar Section -->
+    <nav class="mt-7 w-screen  px-[12%] fixed z-20 navigationBar py-6 md:py-3 transition-all">
+        <div class="grid grid-cols-12 content-center justify-between align-middle ">
+            <div class="md:grid grid-cols-3 col-span-5 hidden">
+                <a href="warta.html" class="text-prim-white w-fit text-center m-auto text-sm menuNavDesk">Warta</a>
+                <a href="ibadah.html" class="text-prim-white w-fit text-center m-auto text-sm menuNavDesk">Ibadah</a>
+                <a class="text-prim-white cursor-pointer w-fit text-center m-auto text-sm menuNavDesk strukturMenu">Struktur</a>
+                
+            </div>
+            <div class="col-span-3 md:col-span-2">
+                <a href="index.html">
+                    <img src="../dist/assets/img/logo2.png" alt="Logo GPIB Pniel Surabaya" class="nav-logo m-auto w-80 md:w-24 cursor-pointer">
+                </a>
+            </div>
+            <div class="hidden md:grid grid-cols-3 col-span-5">
+                <a class="text-prim-white cursor-pointer w-fit text-center m-auto text-sm menuNavDesk pelkatMenu">Pelkat</a>
+                <a class="text-prim-white cursor-pointer w-fit text-center m-auto text-sm menuNavDesk beritaMenu">Berita</a>
+                <a href="kontak.html" class="text-prim-white w-fit text-center m-auto text-sm menuNavDesk">Kontak</a>
+            </div>
+            <div class="md:hidden col-span-9 ml-auto">
+                <button class="hamburgerButton">
+                    <div class="h-1 w-6 bg-prim-white mb-1"></div>
+                    <div class="h-1 w-6 bg-prim-white mb-1"></div>
+                    <div class="h-1 w-6 bg-prim-white"></div>
+                </button>
+            </div>
+        </div>
+
+        <!-- Sub Menu -->
+        <div class="strukturSub px-4 py-3 mt-5 ml-[23%] bg-prim-white border-2 hidden border-prim-blue rounded-xl absolute grid grid-rows-2">
+            <a href="majelis.html" class="hover:underline-prim-blue hover:underline">Majelis & PHMJ</a>
+            <a href="komisi.html" class="hover:underline-prim-blue hover:underline mt-1">Komisi & BPPJ</a>
+        </div>
+        <div class="pelkatSub px-4 py-3 mt-5 ml-[47%] bg-prim-white border-2 hidden border-prim-blue rounded-xl absolute grid grid-rows-2">
+            <a href="pelkat.html" class="hover:underline-prim-blue hover:underline">PA</a>
+            <a href="pelkat.html" class="hover:underline-prim-blue hover:underline mt-1">PT</a>
+            <a href="pelkat.html" class="hover:underline-prim-blue hover:underline mt-1">GP</a>
+            <a href="pelkat.html" class="hover:underline-prim-blue hover:underline mt-1">PKP</a>
+            <a href="pelkat.html" class="hover:underline-prim-blue hover:underline mt-1">PKB</a>
+            <a href="pelkat.html" class="hover:underline-prim-blue hover:underline mt-1">PKLU</a>
+        </div>
+        <div class="beritaSub px-4 py-3 mt-5 ml-[58%] bg-prim-white border-2 hidden border-prim-blue rounded-xl absolute grid grid-rows-2">
+            <a href="artikel.html" class="hover:underline-prim-blue hover:underline">Artikel</a>
+            <a href="galeri.html" class="hover:underline-prim-blue hover:underline mt-1">Foto</a>
+        </div>
+    </nav>
+    
+    <!-- END : Navigation Bar Section -->
+
+    <!-- START : Hamburger Menu -->
+    <section class="bg-prim-white w-screen h-screen z-10 hamburgerMenu hidden fixed py-36 ">
+        <div class="grid grid-rows-8 text-prim-blue font-bold text-xl text-center h-full menuList overflow-y-scroll">
+            <a href="warta.html" class="self-center w-fit mx-auto wartaMobile">Warta</a>
+            <a href="ibadah.html" class="self-center w-fit mx-auto ibadahMobile">Ibadah</a>
+            <button class="self-center strukturMobile w-fit mx-auto">Struktur</button>
+            <div class="menuMajelis hidden grid-rows-2 bg-prim-blue py-5 gap-7">
+                <a href="majelis.html" class="self-center text-prim-white w-fit mx-auto text-[16px]">Majelis & PHMJ</a>
+                <a href="komisi.html" class="self-center text-prim-white w-fit mx-auto text-[16px]">Komisi & BPPJ</a>
+            </div>
+            <button class="self-center w-fit mx-auto pelkatMobile">Pelkat</button>
+            <div class="menuPelkat hidden grid-rows-2 bg-prim-blue py-5 gap-7">
+                <a href="pelkat.html" class="self-center text-prim-white w-fit mx-auto text-[16px]">PA</a>
+                <a href="pelkat.html" class="self-center text-prim-white w-fit mx-auto text-[16px]">PT</a>
+                <a href="pelkat.html" class="self-center text-prim-white w-fit mx-auto text-[16px]">GP</a>
+                <a href="pelkat.html" class="self-center text-prim-white w-fit mx-auto text-[16px]">PKP</a>
+                <a href="pelkat.html" class="self-center text-prim-white w-fit mx-auto text-[16px]">PKB</a>
+                <a href="pelkat.html" class="self-center text-prim-white w-fit mx-auto text-[16px]">PKLU</a>
+            </div>
+            <button href="" class="self-center w-fit mx-auto beritaMobile">Berita</button>
+            <div class="menuBerita hidden grid-rows-2 bg-prim-blue py-5 gap-7">
+                <a href="artikel.html" class="self-center text-prim-white w-fit mx-auto text-[16px]">Artikel</a>
+                <a href="galeri.html" class="self-center text-prim-white w-fit mx-auto text-[16px]">Foto</a>
+            </div>
+            <a href="" class="self-center w-fit mx-auto kontakMobile">Kontak</a>
+        </div>
+    </section>
+    <!-- END : Hamburger Menu -->
+
+    <!-- START : Home Banner -->
+    <section class="banner-home bg-phmj  w-screen h-96 bg-cover bg-[center_left_-41rem] md:bg-center px-[12%]">
+            <div class="mx-auto relative text-center items-center top-[55%] right-[50%] translate-x-[50%] translate-y-[-50%]">
+                <h1 class="text-prim-white leading-relaxed text-2xl md:text-[3rem] font-bold text-center ">Komisi & BPPJ GPIB Jemaat Pniel Surabaya</h1>
+            </div>
+    </section>
+    <!-- END : Home Banner -->
+
+    <!-- START : Komisi Section -->
+    <section class="px-[12%] mt-10">
+        <p class="text-prim-blue">Struktur Gereja</p>
+        <h2 class="font-bold text-4xl text-prim-blue">Komisi GPIB Pniel Surabaya</h2>
+
+        <!-- Button Selection -->
+        <div class="mt-10">
+            <ul class="w-full grid md:grid-cols-3 grid-cols-2 lg:grid-cols-4 gap-5">
+                <li>
+                    <input type="radio" id="germasa" name="komisi" value="germasa" class="hidden peer" required checked>
+                    <label for="germasa" class="inline-flex items-center justify-between w-full p-5 text-prim-blue bg-prim-white border-2 border-prim-blue rounded-2xl cursor-pointer dark:hover:text-prim-white dark:border-prim-blue dark:peer-checked:text-prim-white transition-colors peer-checked:bg-prim-blue peer-checked:border-prim-blue peer-checked:text-prim-blue hover:text-prim-white hover:bg-prim-white dark:text-prim-blue dark:bg-prim-white dark:hover:bg-prim-blue"">                           
+                        <div class="block text-center">
+                            <div class="w-full font-semibold">Germasa</div>
+                        </div>
+                    </label>
+                </li>
+                <li>
+                    <input type="radio" id="ppsdi" name="komisi" value="ppsdi" class="hidden peer">
+                    <label for="ppsdi" class="inline-flex items-center justify-between w-full p-5 text-prim-blue bg-prim-white border-2 border-prim-blue rounded-2xl cursor-pointer dark:hover:text-prim-white dark:border-prim-blue dark:peer-checked:text-prim-white transition-colors peer-checked:bg-prim-blue peer-checked:border-prim-blue peer-checked:text-prim-blue hover:text-prim-white hover:bg-prim-white dark:text-prim-blue dark:bg-prim-white dark:hover:bg-prim-blue">
+                        <div class="block">
+                            <div class="w-full font-semibold">PPSDI - PPK</div>
+                        </div>
+                    </label>
+                </li>
+                <li>
+                    <input type="radio" id="teologi" name="komisi" value="teologi" class="hidden peer">
+                    <label for="teologi" class="inline-flex items-center justify-between w-full p-5 text-prim-blue bg-prim-white border-2 border-prim-blue rounded-2xl cursor-pointer dark:hover:text-prim-white dark:border-prim-blue dark:peer-checked:text-prim-white transition-colors peer-checked:bg-prim-blue peer-checked:border-prim-blue peer-checked:text-prim-blue hover:text-prim-white hover:bg-prim-white dark:text-prim-blue dark:bg-prim-white dark:hover:bg-prim-blue">
+                        <div class="block">
+                            <div class="w-full font-semibold">Teologi</div>
+                        </div>
+                    </label>
+                </li>
+                <li>
+                    <input type="radio" id="peg" name="komisi" value="peg" class="hidden peer">
+                    <label for="peg" class="inline-flex items-center justify-between w-full p-5 text-prim-blue bg-prim-white border-2 border-prim-blue rounded-2xl cursor-pointer dark:hover:text-prim-white dark:border-prim-blue dark:peer-checked:text-prim-white transition-colors peer-checked:bg-prim-blue peer-checked:border-prim-blue peer-checked:text-prim-blue hover:text-prim-white hover:bg-prim-white dark:text-prim-blue dark:bg-prim-white dark:hover:bg-prim-blue">
+                        <div class="block">
+                            <div class="w-full font-semibold">PEG</div>
+                        </div>
+                    </label>
+                </li>
+                <li>
+                    <input type="radio" id="pelkes" name="komisi" value="pelkes" class="hidden peer">
+                    <label for="pelkes" class="inline-flex items-center justify-between w-full p-5 text-prim-blue bg-prim-white border-2 border-prim-blue rounded-2xl cursor-pointer dark:hover:text-prim-white dark:border-prim-blue dark:peer-checked:text-prim-white transition-colors peer-checked:bg-prim-blue peer-checked:border-prim-blue peer-checked:text-prim-blue hover:text-prim-white hover:bg-prim-white dark:text-prim-blue dark:bg-prim-white dark:hover:bg-prim-blue">
+                        <div class="block">
+                            <div class="w-full font-semibold">Pelkes</div>
+                        </div>
+                    </label>
+                </li>
+                <li>
+                    <input type="radio" id="inforkom" name="komisi" value="inforkom" class="hidden peer">
+                    <label for="inforkom" class="inline-flex items-center justify-between w-full p-5 text-prim-blue bg-prim-white border-2 border-prim-blue rounded-2xl cursor-pointer dark:hover:text-prim-white dark:border-prim-blue dark:peer-checked:text-prim-white transition-colors peer-checked:bg-prim-blue peer-checked:border-prim-blue peer-checked:text-prim-blue hover:text-prim-white hover:bg-prim-white dark:text-prim-blue dark:bg-prim-white dark:hover:bg-prim-blue">
+                        <div class="block">
+                            <div class="w-full font-semibold">Inforkom Litbang</div>
+                        </div>
+                    </label>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Content Section -->
+
+        <!-- Germasa -->
+        <div class="mt-14 germasaContent">
+            <div class="w-full h-72 bg-prim-blue"></div>
+            <p class="text-lg text-prim-blue text-justify mt-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dapibus eleifend mauris sit amet viverra. Nunc posuere orci libero, nec varius mauris sodales sed. In non posuere sem. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Suspendisse consectetur arcu sit amet dapibus consectetur.</p>
+            <ol class="mt-5">
+                <li class="font-bold text-prim-blue text-lg">Koordinator :</li>
+                <li>Pdt. Maggie Liona H.S.Th</li>
+            </ol>
+            <ol class="mt-5">
+                <li class="font-bold text-prim-blue text-lg">Anggota :</li>
+                <li>Pdt. Maggie Liona H.S.Th Germasa</li>
+                <li>Pdt. Maggie Liona H.S.Th</li>
+                <li>Pdt. Maggie Liona H.S.Th</li>
+                <li>Pdt. Maggie Liona H.S.Th</li>
+            </ol>
+        </div>
+
+        <!-- PPSDI -->
+        <div class="mt-14 ppsdiContent hidden">
+            <div class="w-full h-72 bg-prim-blue"></div>
+            <p class="text-lg text-prim-blue text-justify mt-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dapibus eleifend mauris sit amet viverra. Nunc posuere orci libero, nec varius mauris sodales sed. In non posuere sem. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Suspendisse consectetur arcu sit amet dapibus consectetur.</p>
+            <ol class="mt-5">
+                <li class="font-bold text-prim-blue text-lg">Koordinator :</li>
+                <li>Pdt. Maggie Liona H.S.Th PPSDI</li>
+            </ol>
+            <ol class="mt-5">
+                <li class="font-bold text-prim-blue text-lg">Anggota :</li>
+                <li>Pdt. Maggie Liona H.S.Th</li>
+                <li>Pdt. Maggie Liona H.S.Th</li>
+                <li>Pdt. Maggie Liona H.S.Th</li>
+                <li>Pdt. Maggie Liona H.S.Th</li>
+            </ol>
+        </div>
+
+        <!-- Teologi -->
+        <div class="mt-14 teologiContent hidden">
+            <div class="w-full h-72 bg-prim-blue"></div>
+            <p class="text-lg text-prim-blue text-justify mt-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dapibus eleifend mauris sit amet viverra. Nunc posuere orci libero, nec varius mauris sodales sed. In non posuere sem. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Suspendisse consectetur arcu sit amet dapibus consectetur.</p>
+            <ol class="mt-5">
+                <li class="font-bold text-prim-blue text-lg">Koordinator :</li>
+                <li>Pdt. Maggie Liona H.S.Th Teologi</li>
+            </ol>
+            <ol class="mt-5">
+                <li class="font-bold text-prim-blue text-lg">Anggota :</li>
+                <li>Pdt. Maggie Liona H.S.Th</li>
+                <li>Pdt. Maggie Liona H.S.Th</li>
+                <li>Pdt. Maggie Liona H.S.Th</li>
+                <li>Pdt. Maggie Liona H.S.Th</li>
+            </ol>
+        </div>
+
+        <!-- peg -->
+        <div class="mt-14 pegContent hidden">
+            <div class="w-full h-72 bg-prim-blue"></div>
+            <p class="text-lg text-prim-blue text-justify mt-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dapibus eleifend mauris sit amet viverra. Nunc posuere orci libero, nec varius mauris sodales sed. In non posuere sem. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Suspendisse consectetur arcu sit amet dapibus consectetur.</p>
+            <ol class="mt-5">
+                <li class="font-bold text-prim-blue text-lg">Koordinator :</li>
+                <li>Pdt. Maggie Liona H.S.Th PEG</li>
+            </ol>
+            <ol class="mt-5">
+                <li class="font-bold text-prim-blue text-lg">Anggota :</li>
+                <li>Pdt. Maggie Liona H.S.Th</li>
+                <li>Pdt. Maggie Liona H.S.Th</li>
+                <li>Pdt. Maggie Liona H.S.Th</li>
+                <li>Pdt. Maggie Liona H.S.Th</li>
+            </ol>
+        </div>
+        
+        <!-- pelkes -->
+        <div class="mt-14 pelkesContent hidden">
+            <div class="w-full h-72 bg-prim-blue"></div>
+            <p class="text-lg text-prim-blue text-justify mt-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dapibus eleifend mauris sit amet viverra. Nunc posuere orci libero, nec varius mauris sodales sed. In non posuere sem. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Suspendisse consectetur arcu sit amet dapibus consectetur.</p>
+            <ol class="mt-5">
+                <li class="font-bold text-prim-blue text-lg">Koordinator :</li>
+                <li>Pdt. Maggie Liona H.S.Th pelkes</li>
+            </ol>
+            <ol class="mt-5">
+                <li class="font-bold text-prim-blue text-lg">Anggota :</li>
+                <li>Pdt. Maggie Liona H.S.Th</li>
+                <li>Pdt. Maggie Liona H.S.Th</li>
+                <li>Pdt. Maggie Liona H.S.Th</li>
+                <li>Pdt. Maggie Liona H.S.Th</li>
+            </ol>
+        </div>
+
+        <!-- inforkom -->
+        <div class="mt-14 inforkomContent hidden">
+            <div class="w-full h-72 bg-prim-blue"></div>
+            <p class="text-lg text-prim-blue text-justify mt-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dapibus eleifend mauris sit amet viverra. Nunc posuere orci libero, nec varius mauris sodales sed. In non posuere sem. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Suspendisse consectetur arcu sit amet dapibus consectetur.</p>
+            <ol class="mt-5">
+                <li class="font-bold text-prim-blue text-lg">Koordinator :</li>
+                <li>Pdt. Maggie Liona H.S.Th inforkom</li>
+            </ol>
+            <ol class="mt-5">
+                <li class="font-bold text-prim-blue text-lg">Anggota :</li>
+                <li>Pdt. Maggie Liona H.S.Th</li>
+                <li>Pdt. Maggie Liona H.S.Th</li>
+                <li>Pdt. Maggie Liona H.S.Th</li>
+                <li>Pdt. Maggie Liona H.S.Th</li>
+            </ol>
+        </div>
+    </section>
+    <!-- END : Komisi Section -->
+
+    <!-- START : BPPJ Section -->
+    <section class="px-[12%] mt-12 mb-5">
+        <p class="text-prim-blue">Struktur Gereja</p>
+        <h2 class="font-bold text-4xl text-prim-blue">BPPJ GPIB Pniel Surabaya</h2>
+        <p class="text-prim-blue text-lg mt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dapibus eleifend mauris sit amet viverra. Nunc posuere orci libero, nec varius mauris sodales sed. In non posuere sem. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Suspendisse consectetur arcu sit amet dapibus consectetur.</p>
+        <ol class="mt-3 text-prim-blue "> 
+            <li class="font-bold text-lg">Anggota: </li>
+            <li>Nama Anggota BPPJ</li>
+            <li>Nama Anggota BPPJ</li>
+            <li>Nama Anggota BPPJ</li>
+        </ol>  
+    </section>
+    <!-- END : BPPJ Section -->
+
+    <!-- START : Footer --> 
+    <footer class="bg-prim-blue px-[12%] py-12 mt-10">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-between gap-9">
+            <div class="">
+                <img src="../dist/assets/img/logo2.png" alt="GPIB Pniel Surabaya" class="w-40 mb-10">
+                <p class="font-bold text-prim-white">+62 000 000 000</p>
+                <p class="font-bold text-prim-white mt-2">gpib.pniel.sby@gmail.com</p>
+            </div>
+            <div class="lg:mx-auto">
+                <p class="font-bold text-prim-white mb-6">Menu</p>
+                <a href="" class="text-sm text-prim-white block">Warta</a>
+                <a href="" class="text-sm text-prim-white block mt-2">Ibadah</a>
+                <a href="" class="text-sm text-prim-white block mt-2">Majelis</a>
+                <a href="" class="text-sm text-prim-white block mt-2">Berita</a>
+                <a href="" class="text-sm text-prim-white block mt-2">Kontak</a>
+            </div>
+            <div class="lg:mx-auto">
+                <p class="font-bold text-prim-white mb-6">Pelkat</p>
+                <a href="" class="text-sm text-prim-white block">Pelayanan Anak</a>
+                <a href="" class="text-sm text-prim-white block mt-2">Persekutuan Teruna</a>
+                <a href="" class="text-sm text-prim-white block mt-2">Gerakan Pemuda</a>
+                <a href="" class="text-sm text-prim-white block mt-2">Persekutuan Kaum Perempuan</a>
+                <a href="" class="text-sm text-prim-white block mt-2">Persekutuan Kaum Bapak</a>
+                <a href="" class="text-sm text-prim-white block mt-2">Persekutuan Kaum Lanjut Usia</a>
+            </div>
+            <div class="lg:mx-auto">
+                <p class="font-bold text-prim-white mb-6">Lokasi</p>
+                <p href="" class="text-sm text-prim-white">Jl. Rajawali 80 - 82 <br> Surabaya</p>
+            </div>
+        </div>
+    </footer>
+    <!-- END : Footer -->
+
+    <!-- START : Copyright -->
+    <section class="py-2 w-screen">
+        <p class="font-bold text-sm text-prim-blue text-center">Copyright ©2023 GPIB Pniel Surabaya. All Rights Reserved.</p>
+    </section>
+    <!-- END : Copyright -->
+
+    <!-- Script File Stacks -->
+    <script src="../src/script.js"></script>
+</body>
+</html>
